@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
   grafana:
-    container_name: 'runsidekick-sidekick-panel'
+    container_name: 'runforesight-foresight-panel'
     build:
       context: ./.config
       args:
@@ -10,5 +10,5 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/runsidekick-sidekick-panel
+      - ./dist:/var/lib/grafana/plugins/runforesight-foresight-panel
       - ./provisioning:/etc/grafana/provisioning
