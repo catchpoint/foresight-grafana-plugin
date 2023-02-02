@@ -1,0 +1,108 @@
+.heatmap-grid-container {
+     position: relative;
+     width: 800px;
+     overflow-y: auto;
+     min-height: 185px;
+
+     .avg-duration-list-table {
+          width: 1400px;
+     }
+}
+
+.heatmap-grid-container > div > div > div {
+     margin-right: 20px;
+     word-wrap: break-word;
+}
+
+.label-que {
+     display: flex;
+     flex-direction: column;
+     align-self: flex-start;
+     width: 1500px;
+     margin-left: 50px;
+}
+
+.label-que-small {
+     display: flex;
+     flex-direction: column;
+     align-self: flex-start;
+     width: 1400px;
+}
+
+.heatmap-grid-seven-container {
+     position: relative;
+     width: 610px;
+     overflow-y: auto;
+     min-height: 185px;
+}
+
+.heatmap-grid-seven-container > div:last-child > div > div {
+     width: 70px !important;
+     word-wrap: break-word;
+     padding: 3px;
+     font-size: 11px;
+     color: #96a0b0;
+     margin-right: 10px;
+}
+
+.heatmap-grid-seven-container > div:last-child > div > div:first-child {
+     flex: 0 0 45px !important;
+}
+
+.numberOfError {
+     float: right;
+     height: 16px;
+     font-size: 12px;
+     font-weight: 500;
+     color: #5599ff;
+}
+
+.numberOfErrorCount {
+     display: flex;
+     justify-content: space-between;
+     line-height: 16px;
+     font-size: 12px;
+     font-family: "Inter";
+}
+
+.numberOfErrorCount {
+     color: #96a0b0;
+}
+
+.numberOfErrorCount:hover {
+     cursor: pointer;
+     gap: 8px;
+     background: rgba(255, 255, 255, 012);
+     color: #ffffff;
+}
+
+// One Day Transform
+.heatmap-grid-container-one-day {
+     position: relative;
+     width: 600px;
+     overflow-y: auto;
+     min-height: 185px;
+     margin-left: -50px;
+     margin-right: 75px;
+}
+
+.heatmap-grid-container-one-day > div:last-child > div > div {
+     width: 20px !important;
+     word-wrap: break-word;
+     padding: 3px;
+     margin-right: 2px;
+     font-size: 8px;
+}
+
+@media (max-width: 480px) {
+     .heatmap-grid-container {
+          position: relative;
+          width: calc(100% - 5px);
+          overflow-x: auto;
+          min-height: 185px;
+          margin-left: -50px;
+     }
+     .label-que-small {
+          width: 100%;
+     }
+}
