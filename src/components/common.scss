@@ -1,0 +1,59 @@
+.foresight-panel-container {
+    font-family: 'Roboto';
+
+    .tp-icon,
+    .lp-icon {
+        width: 16px;
+        height: 16px;
+        border: 2px solid;
+        border-radius: 50%;
+
+        &.disabled {
+            background-color: transparent !important;
+        }
+    }
+
+    .tp-icon {
+        border-color: #847bcb !important;
+        background-color: #847bcb !important;
+    }
+
+    .lp-icon {
+        border-color: #ffd233 !important;
+        background-color: #ffd233 !important;
+    }
+
+
+
+    .list {
+        .list-item {
+            padding: 4px 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &:hover {
+                .actions-container {
+                    visibility: visible;
+                }
+            }
+
+            .actions-container {
+                margin-left: auto;
+                visibility: hidden;
+                display: flex;
+                gap: 10px;
+
+
+                .action-button {
+                    width: 24px;
+                    height: 24px;
+                    padding: 4px;
+
+                }
+            }
+
+
+        }
+    }
+}

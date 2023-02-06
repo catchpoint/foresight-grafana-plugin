@@ -1,0 +1,50 @@
+.ui.popup.foresight-tooltip {
+     background-color: var(--theme-color-5c697c) !important;
+     padding: 0 8px;
+     margin: 8px;
+
+     .foresight-tooltip-content {
+          background-color: var(--theme-color-5c697c);
+          color: var(--theme-color-ffffff);
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+     }
+}
+
+.ui.popup.foresight-tooltip-black-edition {
+     display: flex;
+     align-items: center;
+     background: #161b22;
+     /* Dark/Stroke */
+     border: 1px solid #2f353d;
+     border-radius: 4px;
+
+     .foresight-tooltip-content-black-edition {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+
+          /* identical to box height, or 133% */
+
+          text-align: center;
+
+          /* Light/L50 */
+
+          color: #dcdfe5;
+     }
+}
+
+.ui.bottom.popup.foresight-tooltip-black-edition:before {
+     background: #161b22;
+     border-top: 1px solid #2f353d !important;
+     border-left: 1px solid #2f353d !important;
+}
+
+.ui.top.popup.foresight-tooltip-black-edition:before {
+     background: #161b22;
+     border-bottom: 1px solid #2f353d !important;
+     border-right: 1px solid #2f353d !important;
+}
